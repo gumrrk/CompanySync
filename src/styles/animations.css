@@ -1,0 +1,55 @@
+@keyframes tremble {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes show-modal {
+    0% {
+        top: -100%;
+    }
+
+    100% {
+        top: 50%;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-20%);
+        /* Inicia deslocado para a direita */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(-50%);
+        /* Desloca para a posição original */
+    }
+}
+
+.slideOut {
+    animation: slideOut 0.3s forwards;
+}
+
+@keyframes slideOut {
+    0% {
+        opacity: 1;
+        transform: translateX(-50%);
+        /* Posição original */
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-20%);
+        /* Desloca para a direita */
+    }
+}

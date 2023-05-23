@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/globalstyles.css">
+        <link rel="stylesheet" href="../styles/header.css">
+        <link rel="stylesheet" href="../styles/animations.css">
+        <link rel="stylesheet" href="../styles/toastfy.css">
+        <link rel="stylesheet" href="../styles/adminpage.css">
+        <link rel="stylesheet" href="../styles/modals.css">
+        <link rel="shortcut icon" href="../icon/favicon.svg" type="image/x-icon">
+        <title>Kenzie Empresas - Adm</title>
+    </head>
+    
+    <body>
+        <header>
+            <div class="div_header">
+                <div class="first-div_header">
+                    <img src="../icon/EllipseAdm.svg" alt="">
+                    <h1 class="button-home">Kenzie Empresas</h1>
+                </div>
+                <div class="second-div_header">
+                    <button class="btn_header white-button button-logout">Logout</button>
+                </div>
+            </div>
+            <img id="dark-button" src="../icon/moon.svg"></img>
+        </header>
+        <main>
+            <div class="div_main">
+                <nav class="div_main_nav">
+                    <select name="" class="div_main_nav_select" id="select-companies">
+                        <option value="" selected disabled hidden>Selecionar empresa</option>
+                    </select>
+                </nav>
+            <section class="section_main">
+                <div class="section_main_div">
+                    <h1>Departamentos</h1>
+                    <button class="openModal openModal-createDepartment"><img
+                            src="../icon/vector-plus.svg">Criar</button>
+                </div>
+                <section class="section_main_section">
+                    <ul class="ul1" id="ul1">
+                        <div class="divEmptyDepartments"><h1>Não há departamentos cadastrados nesta empresa</h1></div>
+                    </ul>
+                </section>
+            </section>
+            <section class="section_main">
+                <div class="section_main_div">
+                    <h1>Usuários cadastrados</h1>
+                </div>
+                <section class="section_main_section">
+                    <ul class="ul2" id="ul2">
+                        <div class="divEmptyUsers"><h1>Não há usuários contratados nesta empresa</h1></div>
+                    </ul>
+                </section>
+            </section>
+
+            <dialog class="dialog-infoDepartment modal" id="modal-infoDepartment">
+                <div class="dialog_div-infoDepartment">
+                    <h1></h1>
+                    <img src="../icon/vector-x.svg" alt="" class="exitButton">
+                    <h3></h3>
+                    <p></p>
+                    <div class="dialog_div-infoDepartment_div1">
+                        <select name="" class="dialog_div-infoDepartment_select">
+                        </select>
+                        <button class="buttonHire" id="buttonHire">Contratar</button>
+                    </div>
+                    <div class="dialog_div-infoDepartment_div2">
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+            </dialog>
+
+            <dialog class="dialog-createDepartment modal" id="modal-createDepartment">
+                <div class="dialog_div-createDepartment">
+                    <h1>Criar Departamento</h1>
+                    <img src="../icon/vector-x.svg" alt="" class="exitButton">
+                    <input type="text" name="" placeholder="Nome do departamento" id="nameCreate">
+                    <input type="text" name="" placeholder="Descrição" id="descriptionCreate">
+                    <select name="" class="dialog_div-createDepartment_select">
+                        <option value="" selected disabled hidden>Selecionar empresa</option>
+                    </select>
+                    <button id="buttonCreate">Criar</button>
+                </div>
+            </dialog>
+
+            <dialog class="dialog_editDepartment modal" id="modal-editDepartment">
+                <div class="dialog_div-editDepartment">
+                    <h1>Editar Departamento</h1>
+                    <img src="../icon/vector-x.svg" alt="" class="exitButton">
+                    <input type="text" name="" placeholder="Valores anteriores da descrição" id="editInput">
+                    <button id="saveButton">Salvar</button>
+                </div>
+            </dialog>
+
+            <dialog class="dialog-editUser modal" id="modal-editUser">
+                <div class="dialog_div-editUser">
+                    <h1>Editar Usuário</h1>
+                    <img src="../icon/vector-x.svg" alt="" class="exitButton">
+                    <form action="">
+                        <input type="text" name="" placeholder="Nome">
+                        <input type="email" name="" placeholder="E-mail" required>
+                        <button id="saveButtonUser">Salvar</button>
+                    </form>
+                </div>
+            </dialog>
+
+            <dialog class="dialog-deleteDepartment modal" id="modal-deleteDepartment">
+                <div class="dialog_div-deleteDepartment">
+                    <img src="../icon/vector-x.svg" alt="" class="exitButton">
+                    <div>
+                        <h1>Realmente deseja remover o Departamento <span id="nameDepartment"></span> e demitir seus
+                            funcionários?</h1>
+                    </div>
+                    <button id="deleteDepartmentButton">Remover</button>
+                </div>
+            </dialog>
+
+            <dialog class="dialog-deleteUser modal" id="modal-deleteUser">
+                <div class="dialog_div-deleteUser">
+                    <img src="../icon/vector-x.svg" alt="" class="exitButton">
+                    <div>
+                        <h1>Realmente deseja remover o usuário <span id="nameEmployee"></span>?</h1>
+                    </div>
+                    <button id="deleteEmployeeButton">Remover</button>
+                </div>
+            </dialog>
+        </div>
+    </main>
+    <script type="module" src="../scripts/routes.js"></script>
+    <script type="module" src="../scripts/modals.js"></script>
+    <script type="module" src="../scripts/validation.js"></script>
+    <script type="module" src="../scripts/adminpage.js"></script>
+    <script type="module" src="../scripts/theme.js"></script>
+</body>
+
+</html>

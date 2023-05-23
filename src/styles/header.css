@@ -1,0 +1,195 @@
+@media (max-width: 768px) {
+    header {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--color-grey-5);
+        border: .0625rem solid rgba(0, 0, 0, 0.1);
+        width: 100vw;
+        z-index: 2;
+        height: 15vh;
+    }
+
+    .div_header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .first-div_header {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .first-div_header h1 {
+        font-family: var(--font-family-1);
+        font-weight: var(--font-weight-1);
+        font-size: var(--font-size-3);
+        line-height: var(--line-height-1);
+        cursor: pointer;
+        color: var(--color-black);
+    }
+
+    .second-div_header {
+        display: flex;
+        flex-direction: row;
+        gap: .6875rem;
+    }
+
+    .btn_header {
+        width: 80px;
+        height: 28px;
+        border: .0625rem solid var(--color-brand-1);
+        font-family: var(--font-family-2);
+        font-weight: var(--font-weight-1);
+        font-size: var(--font-size-5);
+        line-height: var(--line-height-3);
+        box-sizing: border-box;
+    }
+
+    .white-button {
+        background-color: transparent;
+        color: var(--color-brand-1);
+    }
+
+    .white-button:hover {
+        background-color: var(--color-mode);
+        color: var(--color-brand-1);
+    }
+
+    .blue-button {
+        background-color: var(--color-brand-1);
+        color: var(--color-white-fixed);
+    }
+
+    .blue-button:hover {
+        background-color: var(--color-brand-1-hover);
+        color: var(--color-white-fixed);
+    }
+
+    .blue-button:active {
+        background-color: var(--color-brand-2);
+        color: var(--color-mode);
+    }
+    
+    #dark-button {
+        height: 22px;
+        width: 22px;
+        border: none;
+        border-radius: 50%;
+        margin: 0rem .3125rem 0rem .3125rem;
+        font-size: 1.25rem;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.125rem;
+        background-color: transparent;
+        cursor: pointer;
+        font-weight: normal;
+        position: absolute;
+        align-self: center;
+        left: 85vw;
+        z-index: 3;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--color-grey-5);
+        border: .0625rem solid rgba(0, 0, 0, 0.1);
+        height: 5rem;
+        width: 100vw;
+        z-index: 2;
+    }
+
+    .div_header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        max-width: 72.5rem;
+    }
+
+    .first-div_header {
+        display: flex;
+        flex-direction: row;
+        gap: .9375rem;
+    }
+
+    .first-div_header h1 {
+        font-family: var(--font-family-1);
+        font-weight: var(--font-weight-1);
+        font-size: var(--font-size-2);
+        line-height: var(--line-height-1);
+        cursor: pointer;
+        color: var(--color-black);
+    }
+
+    .second-div_header {
+        display: flex;
+        flex-direction: row;
+        gap: .6875rem;
+    }
+
+    .btn_header {
+        width: 142px;
+        height: 48px;
+        border: .0625rem solid var(--color-brand-1);
+        font-family: var(--font-family-2);
+        font-weight: var(--font-weight-1);
+        font-size: var(--font-size-3);
+        line-height: var(--line-height-3);
+        box-sizing: border-box;
+    }
+
+    .white-button {
+        background-color: transparent;
+        color: var(--color-brand-1);
+    }
+
+    .white-button:hover {
+        background-color: var(--color-mode);
+        color: var(--color-brand-1);
+    }
+
+    .blue-button {
+        background-color: var(--color-brand-1);
+        color: var(--color-white-fixed);
+    }
+
+    .blue-button:hover {
+        background-color: var(--color-brand-1-hover);
+        color: var(--color-white-fixed);
+    }
+
+    .blue-button:active {
+        background-color: var(--color-brand-2);
+        color: var(--color-mode);
+    }
+
+    #dark-button {
+        height: 22px;
+        width: 22px;
+        border: none;
+        border-radius: 50%;
+        margin: 0rem .3125rem 0rem .3125rem;
+        font-size: 1.25rem;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.125rem;
+        background-color: transparent;
+        cursor: pointer;
+        font-weight: normal;
+        position: absolute;
+        align-self: center;
+        right: 6vh;
+        z-index: 3;
+    }
+}
+
