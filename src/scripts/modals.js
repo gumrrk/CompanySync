@@ -451,7 +451,7 @@ async function editUser() {
 }
 
 function validateEmail(email) {
-    // Expressão regular para validar o formato do email
+    
     const emailRegex = /^[\w.-]+@[\w.-]+\.[a-zA-Z]{2,}$/;
     return emailRegex.test(email);
 }

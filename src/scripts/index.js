@@ -12,7 +12,7 @@ const renderizarEmpresas = async () => {
       const allCategories = await response2.json();
       const ul = document.querySelector('#ul-companies');
 
-      // Popular o select com as categorias únicas
+      
       const selectSetores = document.querySelector('#select-setores');
       const uniqueCategories = allCategories.filter((categoria, index, array) => {
         return array.findIndex(c => c.name === categoria.name) === index;
@@ -25,7 +25,7 @@ const renderizarEmpresas = async () => {
         selectSetores.appendChild(option);
       });
 
-      // Filtrar e exibir as empresas de acordo com a categoria selecionada
+      
       selectSetores.addEventListener('change', (event) => {
         const selectedCategory = event.target.value;
         let filteredCompanies = allCompanies.filter(company => company.category_id === selectedCategory);
@@ -38,9 +38,9 @@ const renderizarEmpresas = async () => {
           const h2 = document.createElement('h2');
           const p = document.createElement('p');
           h2.innerText = company.name;
-          // Encontre o objeto da categoria cujo id é igual ao id da categoria da empresa atual
+          
           const category = allCategories.find(category => category.id === company.category_id);
-          // Use o nome da categoria encontrado para preencher o elemento p
+          
           p.innerText = category ? category.name : '';
           li.appendChild(h2);
           li.appendChild(p);
@@ -48,15 +48,15 @@ const renderizarEmpresas = async () => {
         });
       });
 
-      // Renderizar todas as empresas na ul
+      
       allCompanies.map(company => {
         const li = document.createElement('li');
         const h2 = document.createElement('h2');
         const p = document.createElement('p');
         h2.innerText = company.name;
-        // Encontre o objeto da categoria cujo id é igual ao id da categoria da empresa atual
+        
         const category = allCategories.find(category => category.id === company.category_id);
-        // Use o nome da categoria encontrado para preencher o elemento p
+        
         p.innerText = category ? category.name : '';
         li.appendChild(h2);
         li.appendChild(p);

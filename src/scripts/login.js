@@ -32,11 +32,11 @@ function loginUser() {
         return;
     }
 
-    // Adicionar listener para tecla pressionada no input de senha
+    
     passwordInput.addEventListener('keypress', async (event) => {
-        if (event.key === 'Enter') { // Verificar se a tecla pressionada é Enter
+        if (event.key === 'Enter') { 
             event.preventDefault();
-            loginButton.click(); // Chamar o evento do botão de login manualmente
+            loginButton.click(); 
         }
     });
 

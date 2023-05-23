@@ -8,7 +8,7 @@
     z-index: 4;
 }
 
-/* DIALOG PARA CRIAR DEPARTAMENTO */
+
 
 .dialog_div-createDepartment {
     display: flex;
@@ -94,7 +94,7 @@
     cursor: pointer;
 }
 
-/* DIALOG PARA EDITAR DEPARTAMENTO */
+
 
 .dialog_div-editDepartment {
     display: flex;
@@ -166,7 +166,7 @@
     cursor: pointer;
 }
 
-/* DIALOG QUE EDITA USUÁRIO */
+
 
 .dialog_div-editUser {
     display: flex;
@@ -231,7 +231,7 @@
     cursor: pointer;
 }
 
-/* DIALOG QUE DELETA DEPARTAMENTO */
+
 
 .dialog_div-deleteDepartment {
     display: flex;
@@ -282,7 +282,7 @@
     cursor: pointer;
 }
 
-/* DIALOG QUE DELETA USUÁRIO */
+
 
 .dialog_div-deleteUser {
     display: flex;
@@ -333,7 +333,7 @@
     cursor: pointer;
 }
 
-/* DIALOG QUE DESCREVE O DEPARTAMENTO */
+
 .dialog_div-infoDepartment {
     display: flex;
     flex-direction: column;

@@ -1,9 +1,9 @@
-// Função responsável por alterar o tema da página entre claro e escuro
+
 function changeMode() {
     const body = document.body;
     const mainElement = document.querySelector('.mainElement')
     if (body.classList.contains('dark-mode')) {
-        // Modo claro
+        
         document.documentElement.style.setProperty('--color-brand-1', '#0000FF');
         document.documentElement.style.setProperty('--color-brand-1-hover', '#0000ac');
         document.documentElement.style.setProperty('--color-brand-2', '#3532FF');
@@ -35,7 +35,7 @@ function changeMode() {
             }
         }
     } else {
-        // Modo escuro
+        
         document.documentElement.style.setProperty('--color-brand-1', '#6741d9');
         document.documentElement.style.setProperty('--color-brand-1-hover', '#4c3299');
         document.documentElement.style.setProperty('--color-brand-2', '#000000');
@@ -69,7 +69,7 @@ function changeMode() {
     }
 }
 
-// Função que busca o tema preferido no localStorage
+
 function applyDarkModeFromLocalStorage() {
     const darkMode = localStorage.getItem('darkMode');
     const body = document.body;
@@ -81,7 +81,7 @@ function applyDarkModeFromLocalStorage() {
 }
 applyDarkModeFromLocalStorage()
 
-// Função que adiciona a função anterior ao botão de mudar tema no HTML
+
 function addDarkButton() {
     const button = document.querySelector('#dark-button');
     button.addEventListener('click', changeMode);

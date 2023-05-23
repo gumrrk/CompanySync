@@ -84,7 +84,7 @@ function goToLoginPage() {
 }
 
 function goToLoginPageClean() {
-  localStorage.removeItem('isAdm'); // limpa o localStorage
+  localStorage.removeItem('isAdm'); 
   if (window.location.pathname.includes('/src/pages/')) {
     window.location.href = '../../src/pages/login.html';
   } else {

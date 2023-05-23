@@ -1,5 +1,5 @@
 const authToken = localStorage.getItem('authToken');
-const baseUrl = 'http://localhost:3333';
+const baseUrl = 'http://localhost:3333'
 
 try {
   const response1 = await fetch(`${baseUrl}/employees/profile`, {

@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:3333';
+const baseUrl = 'http://localhost:3333'
 
 const form = document.querySelector('.div_main');
 const nameInput = form.querySelector('input[name="nome"]');
@@ -6,7 +6,7 @@ const emailInput = form.querySelector('input[name="email"]');
 const passwordInput = form.querySelector('input[name="senha"]');
 const registerButton = form.querySelector('.button-register-required');
 
-// Função que envia a requisição POST para o servidor
+
 function registerEmployee(nome, email, senha) {
   const data = { name: nome, email: email, password: senha };
 
@@ -31,14 +31,14 @@ function registerEmployee(nome, email, senha) {
     });
 }
 
-// Evento de clique no botão "Cadastrar"
+
 registerButton.addEventListener('click', event => {
   event.preventDefault();
   const nome = nameInput.value;
   const email = emailInput.value;
   const senha = passwordInput.value;
 
-  // Validar os campos do formulário
+  
   if (nome === '' || email === '' || senha === '') {
     setToastDiv("", "errorDiv", 'Por favor, preencha todos os campos');
   } else if (!validarEmail(email)) {
@@ -46,7 +46,7 @@ registerButton.addEventListener('click', event => {
   } else if (senha.length < 5) {
     setToastDiv("", "errorDiv", 'A senha deve ter pelo menos 5 caracteres');
   } else {
-    // Enviar a requisição POST para o servidor
+    
     localStorage.setItem('goLogin', 'y')
     registerEmployee(nome, email, senha);
   }
@@ -55,7 +55,7 @@ registerButton.addEventListener('click', event => {
 function goLoginAfterRegister() {
   const goLogin = localStorage.getItem('goLogin');
   if (goLogin === 'y') {
-    localStorage.clear(); // limpa o localStorage
+    localStorage.clear(); 
     if (window.location.pathname.includes('/src/pages/')) {
       window.location.href = '../../src/pages/login.html';
     } else {
@@ -65,7 +65,7 @@ function goLoginAfterRegister() {
 }
 goLoginAfterRegister()
 
-// Função para validar o email
+
 function validarEmail(email) {
   const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return regex.test(email);

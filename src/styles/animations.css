@@ -26,13 +26,13 @@
     0% {
         opacity: 0;
         transform: translateX(-20%);
-        /* Inicia deslocado para a direita */
+       
     }
 
     100% {
         opacity: 1;
         transform: translateX(-50%);
-        /* Desloca para a posição original */
+       
     }
 }
 
@@ -44,12 +44,12 @@
     0% {
         opacity: 1;
         transform: translateX(-50%);
-        /* Posição original */
+       
     }
 
     100% {
         opacity: 0;
         transform: translateX(-20%);
-        /* Desloca para a direita */
+       
     }
 }
