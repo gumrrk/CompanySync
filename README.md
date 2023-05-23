@@ -15,7 +15,7 @@ Um dos desafios principais do CompanySync é a identificação e autenticação 
 ## Configuração
 Para usar o CompanySync, siga as etapas abaixo:
 
-Clone a API localmente. Você pode encontrar o repositório da API no link a seguir: https://github.com/Kenzie-Academy-Brasil-Developers/kenzie-empresas-API
+Clone a API localmente. Você pode encontrar o repositório da API no link a seguir: https://github.com/gumrrk/clone-api-bertoldo
 
 Após clonar o repositório da API, navegue até o diretório do projeto e execute os seguintes comandos:
 
