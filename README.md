@@ -21,6 +21,4 @@ Após clonar o repositório da API, navegue até o diretório do projeto e execu
 
 ```npm start
 npm run build
-npm run dev```
-
-### Isso iniciará a API localmente e estará pronta para ser usada pelo CompanySync.
+npm run dev
